@@ -8,6 +8,11 @@ document.getElementById('btn-add-money').addEventListener('click', (event) => {
         const balanceNumber = parseInt(balance);
         const newBalance = addMoneyNumber + balanceNumber;
         document.getElementById('balance').innerText = newBalance;
+        const p=document.createElement('p');
+        p.innerText=`Added ${addMoney} Tk.New Balance:${newBalance}`
+        document.getElementById('transaction-container').appendChild(p);
+
+
        
     } else {
         alert("please try again");
