@@ -8,10 +8,10 @@ document.getElementById('btn-cash-out').addEventListener('click',(event)=>{
     }
     if(pin ==='25800'){
         let balance=document.getElementById('balance').innerText
-        if(balance<cashOut){
-            alert("you do not have money")
-            return;
-        }
+        // if(cashOut > balance){
+        //     alert("you do not have money")
+        //     return;
+        // }
         let cashInNumber=parseInt(cashOut);
         let balanceInNumber=parseInt(balance);
         let newBalance=balanceInNumber-cashInNumber;
